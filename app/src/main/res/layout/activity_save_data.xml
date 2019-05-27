@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.sarnobatvipul0211.profileapp.SaveDataActivity">
+
+
+    <TextView
+        android:id="@+id/tvadd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Add Data"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvadd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_ti"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/d_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobileno_ti"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_ti"
+            android:layout_marginTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/d_mobileno"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailid_ti"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileno_ti"
+            android:layout_marginTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/d_emailid"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnadddata"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="40dp"
+            android:text="Add Data"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="savedata"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
